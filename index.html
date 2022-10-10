@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- start -->
+    <div class="header">
+      <section class="one"><h1>joab torreys</h1></section>
+      <section class="two">
+        <nav class="navarea">
+          <div class="navwrap">
+            <a href="./index.html">home</a>
+            <a href="#about" onclick="flicker()">about</a>
+            <a href="#contact" onclick="flicker()">contact</a>
+          </div>
+        </nav>
+      </section>
+      <section class="three">
+        <button onclick="flicker()">menu</button>
+      </section>
+    </div>
+    <div class="home">
+      <video class="vid" src="./videos/earth.mp4" muted loop></video>
+      <div class="home-overlay">
+        <div class="hero1">
+          <h2>joab</h2>
+          <h1>torreys</h1>
+        </div>
+        <div class="hero2">
+          <p>frontend web developer</p>
+          <h6>( html css javascript )</h6>
+          <a href="#contact" class="hero-btn">contact me</a>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="about">
+      <div class="about-title">
+        <h2>about</h2>
+      </div>
+      <div class="about-container">
+        <section class="about-bio">
+          <p>
+            Hi, my name is Joab Torreys and I am a Frontend Web Developer (html
+            css javascript) and react.js as my frontend framework of choice. I
+            am a hard working self driven, self motivated and down to earth
+            individual. I look forward to working with anyone of a humble,
+            peaceful and respectful nature. Thank you
+          </p>
+        </section>
+      </div>
+    </div>
+    <div id="contact" class="contact">
+      <h2>contact</h2>
+    </div>
+    <!-- end -->
+    <script src="./script.js"></script>
+  </body>
+</html>
