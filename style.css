@@ -81,9 +81,6 @@ html {
 }
 
 
-
-
-
 .three {
     position: absolute;
     top: 0;
@@ -108,8 +105,6 @@ html {
     border: 0;
     outline: none;
 }
-
-
 
 .home {
     width: 100vw;
@@ -142,7 +137,6 @@ html {
     left: 0;
     width: 50%;
     height: 15%;
-    /* background-color: gainsboro; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,16 +152,12 @@ html {
     text-shadow: 2px 6px 12px purple;
 }
 
-
-
 .hero1 h1 {
     color: whitesmoke;
     font-family: 'headline';
     font-size: 130%;
     margin-left: 15%;
 }
-
-
 
 .hero2 {
     position: absolute;
@@ -224,8 +214,9 @@ html {
     z-index: 10;
     position: relative;
     background-color: black;
-
 }
+
+
 
 
 /* about section */
@@ -264,6 +255,10 @@ html {
     font-size: 120%;
     font-weight: 200;
 }
+
+
+
+/* contact section */
 
 .contact {
     width: 100vw;
@@ -309,4 +304,65 @@ html {
 
 .contact-container p {
     color: white;
+}
+
+
+
+/* projects section */
+
+.projects {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    background-color: black;
+
+}
+
+.projects-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-title h2 {
+    font-family: 'fatman';
+    color: #af41af;
+    font-size: 100%;
+}
+
+.projects-container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    padding-top: 25px;
+    width: 100%;
+    min-height: 90%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itembox {
+    background-color: purple;
+    height: 100px;
+    width: 300px;
+    margin: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.itembox h5 {
+    color: white;
+    font-size: 150%;
+
 }
