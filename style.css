@@ -1,4 +1,4 @@
-@media screen and (min-width:501px) {
+@media screen and (min-width:601px) {
 
 
 
@@ -50,18 +50,19 @@
 
     .one {
         flex: 2;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
+        position: relative;
     }
 
     .one h1 {
+        position: absolute;
+        left: 6%;
+        top: 25%;
         text-transform: uppercase;
-        font-family: 'oil';
-        color: #af41af;
+        font-family: 'Times New Roman', Times, serif;
+        color: #dd59dd;
         font-size: clamp(16px, 1.8vw, 28px);
-        margin-left: 15%;
-        text-shadow: 1px 1px 0px whitesmoke;
+        text-shadow: 1px 1px 3px gainsboro;
+        word-spacing: 5px;
     }
 
     .two {
@@ -290,16 +291,16 @@
 
     .contact-main h4 {
         font-family: 'Times New Roman', Times, serif;
-        font-size: clamp(13px, 1.8vw, 30px);
+        font-size: clamp(15px, 1.8vw, 28px);
         text-transform: capitalize;
         color: white;
-        padding: 5%;
+        padding: 3%;
     }
 
 
     .contact-main p {
         font-family: 'Times New Roman', Times, serif;
-        font-size: clamp(12px, 1.8vw, 00px);
+        font-size: clamp(11px, 1.8vw, 20px);
         text-transform: lowercase;
         color: white;
     }
@@ -349,8 +350,8 @@
     .item {
         background-color: #d23eeb;
         margin: 2%;
-        width: 40vw;
-        height: 10vh;
+        width: 20vw;
+        height: 16vh;
         border-radius: 15px;
         display: flex;
         justify-content: center;
@@ -363,8 +364,9 @@
 
     .item h4 {
         color: rgb(20, 20, 20);
-        font-size: clamp(12px, 1vw, 20px);
+        font-size: clamp(11px, 1vw, 18px);
         text-transform: capitalize;
+        font-family: 'header';
     }
 
 
@@ -398,7 +400,7 @@
 
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
 
     * {
         margin: 0;
@@ -425,12 +427,12 @@
     }
 
     @font-face {
-        font-family: 'moon';
-        src: url(./fonts/shatter.ttf);
+        font-family: 'header';
+        src: url(./fonts/header.ttf);
     }
 
     .active {
-        transform: translate(-100%)
+        transform: translate(-70%)
     }
 
     .header {
@@ -456,12 +458,15 @@
     }
 
     .navarea {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        top: 5%;
+        width: 70%;
+        height: 70%;
         background-color: #af41af;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 0 0 0 90px;
 
     }
 
@@ -478,10 +483,10 @@
         text-decoration: none;
         text-transform: capitalize;
         font-weight: bold;
-        font-size: 110%;
+        font-size: 100%;
         color: black;
+        font-family: 'header';
     }
-
 
 
 
@@ -490,15 +495,16 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 20%;
-        height: 100%;
+        width: 70px;
+        height: 70px;
 
     }
 
     .three button {
         color: black;
         text-decoration: none;
-        font-size: 90%;
+        font-size: 80%;
+        font-family: 'header';
         display: block;
         background-color: #af41af;
         width: 100%;
@@ -509,7 +515,6 @@
         text-transform: capitalize;
         border: 0;
         outline: none;
-        border-radius: 0px 0px 0px 20px;
     }
 
 
@@ -540,32 +545,33 @@
     }
 
     .hero1 {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
         width: 50%;
-        height: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        line-height: 23px;
+        height: 10%;
     }
 
     .hero1 h2 {
-        color: white;
-        font-family: 'headline';
-        font-size: 125%;
-        margin-left: 15%;
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        color: #dd59dd;
+        font-size: clamp(10px, 3.8vw, 20px);
+        text-shadow: 1px 1px 3px gainsboro;
     }
 
 
 
     .hero1 h1 {
-        color: #edbe31;
-        font-family: 'headline';
-        font-size: 130%;
-        margin-left: 15%;
+        position: absolute;
+        top: 45%;
+        left: 14%;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        color: #dd59dd;
+        font-size: clamp(10px, 3.8vw, 20px);
+        text-shadow: 1px 1px 3px gainsboro;
 
     }
 
@@ -581,13 +587,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1%;
     }
 
     .hero2 p {
         font-family: 'fatman';
         color: aliceblue;
         text-shadow: 3px 3px 6px green;
-        font-size: 160%;
+        font-size: clamp(12px, 4.5vw, 24px);
         opacity: 0.8;
     }
 
@@ -595,7 +602,7 @@
     .hero2 h6 {
         color: aliceblue;
         text-shadow: 3px 3px 6px green;
-        font-size: 130%;
+        font-size: clamp(10px, 4vw, 20px);
         opacity: 0.6;
     }
 
@@ -607,12 +614,13 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        width: 140px;
-        height: 45px;
+        width: 20%;
+        height: 10%;
         border-radius: 25px;
-        margin-top: 30px;
+        margin-top: 10px;
         text-transform: uppercase;
-        font-size: 60%;
+        font-size: 45%;
+        font-family: 'header';
     }
 
     .hero-btn:hover {
@@ -649,10 +657,10 @@
     }
 
     .about-title h2 {
-        color: #edbe31;
-        font-size: 100%;
+        color: gainsboro;
+        font-family: 'header';
+        font-size: clamp(10px, 3.5vw, 19px);
         text-transform: capitalize;
-        font-size: 20px;
     }
 
     .about-container {
@@ -661,15 +669,15 @@
         left: 0;
         width: 100%;
         height: 80%;
-        padding: 15%;
+        padding: 20%;
         text-align: center;
-        line-height: 28px;
     }
 
     .about-container p {
-        color: white;
-        font-size: 120%;
-        font-weight: 200;
+        color: whitesmoke;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: clamp(12px, 4vw, 24px);
+
     }
 
 
@@ -695,10 +703,10 @@
     }
 
     .contact-title h2 {
-        color: #edbe31;
-        font-size: 100%;
+        color: gainsboro;
+        font-family: 'header';
+        font-size: clamp(10px, 3.5vw, 19px);
         text-transform: capitalize;
-        font-size: 20px;
     }
 
 
@@ -716,20 +724,22 @@
     }
 
 
-
-    .contact h4 {
-        color: whitesmoke;
-        font-size: 20px;
+    .contact-main h4 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: clamp(8px, 7vw, 21px);
         text-transform: capitalize;
-
-    }
-
-
-    .contact p {
         color: white;
-        font-size: 20px;
-        margin-bottom: 60px;
+        padding: 3%;
     }
+
+
+    .contact-main p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: clamp(7px, 6vw, 20px);
+        text-transform: lowercase;
+        color: white;
+    }
+
 
     /* projects section */
     .projects {
@@ -750,8 +760,9 @@
     }
 
     .projects-title h2 {
-        font-size: 20px;
-        color: #edbe31;
+        color: gainsboro;
+        font-family: 'header';
+        font-size: clamp(10px, 3.5vw, 19px);
         text-transform: capitalize;
     }
 
@@ -768,7 +779,7 @@
     }
 
     .item {
-        background-color: #00BCD4;
+        background-color: #d23eeb;
         margin: 2%;
         width: 40vw;
         height: 12vh;
@@ -781,8 +792,17 @@
         text-decoration: none;
         text-transform: capitalize;
         color: black;
-        font-size: 18px;
+        font-size: 80%;
     }
+
+    .item h4 {
+        color: rgb(20, 20, 20);
+        font-size: clamp(9px, 2vw, 18px);
+        text-transform: capitalize;
+        font-family: 'header';
+    }
+
+
 
     .footer {
         width: 100%;
@@ -802,13 +822,14 @@
     }
 
     .footer-main h4 {
+        color: gainsboro;
+        font-family: 'header';
+        font-weight: 100;
         text-transform: capitalize;
-        color: aliceblue;
+        font-size: clamp(8px, 2vw, 15px);
     }
 
-    .footer-main p {
-        color: whitesmoke;
-    }
+
 
 
 
